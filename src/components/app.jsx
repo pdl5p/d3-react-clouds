@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import { Cloud1Sample } from './clouds/cloud1sample';
+import { Cloud2Sample } from './clouds/cloud2sample';
 
-const App = () => {
-    return (
-        <Cloud1Sample />
-    )
+class App extends Component {
+    render() {
+        return (
+            <Cloud2Sample />
+        )
+    }
 }
 
 export { App };

@@ -5,7 +5,7 @@ var path = require('path');
 module.exports = {
 
     entry: [
-        'webpack-dev-server/client?http://localhost:3000',
+        'webpack-dev-server/client?http://localhost:8080',
         'webpack/hot/dev-server',
         './src/index.js'
     ],
@@ -37,9 +37,9 @@ module.exports = {
     resolve: {
         extensions: ['', '.js', '.jsx']
     },
-    // devServer: {
-    //     hot: true,
-    //     inline: true,
-    //     //contentBase: 'bld'
-    // }
+    devServer: {
+        hot: true,
+        inline: true,
+        //contentBase: 'bld'
+    }
 }

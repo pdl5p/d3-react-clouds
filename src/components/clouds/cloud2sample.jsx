@@ -1,24 +1,31 @@
 import React from 'react';
-//import { Cloud2 } from './cloud2';
-//import ReactFauxDOM from 'react-faux-dom';
-//import * as d3 from 'd3';
+import { Cloud1Sample } from './cloud1sample';
+import { Cloud2 } from './cloud2';
+import { Cloud3 } from './cloud3';
+import { Cloud4 } from './cloud4';
 
-const Cloud2Sample = () => {
+import ReactFauxDOM from 'react-faux-dom';
+import * as d3 from 'd3';
 
-    // const cont = ReactFauxDOM.createElement('div');
+class Cloud2Sample extends React.Component {
 
-    // let div = d3.select(cont)
-    //     .attr('width', 500)
-    //     .attr('height', 200)
-    //     //.attr('backgroundColor', 'red')
-    //     .text("hello  qwertyabc");
+    constructor(props){
+        super(props);
 
-    //cont. = "wABC";
+        // this.state = { data: []};
 
-    return (
-        //cont.toReact()
-        <div>azssssaacss</div>
-    )
+        // setInterval(() => {
+        //     this.state.data.length < 10 ? this.add() : this.remove()
+        // }, 100);
+    }
+
+    render(){
+        return (
+            <div>
+                <Cloud4 />
+            </div>
+        )
+    }
 }
 
 export { Cloud2Sample };

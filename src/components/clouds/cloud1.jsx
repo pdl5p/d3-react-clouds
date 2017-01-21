@@ -10,7 +10,7 @@ const Cloud1 = (props) => {
         opacity,
         fill: "#ccc",
         stroke: "white",
-        strokeWidth: "5px"
+        strokeWidth: "10px"
     }
 
     const cloud = (<svg style={style} width="512" height="512" viewBox="0 0 512 512">
