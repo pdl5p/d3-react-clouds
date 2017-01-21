@@ -5,13 +5,13 @@ var path = require('path');
 module.exports = {
 
     entry: [
-        'webpack-dev-server/client?http://localhost:8080',
-        'webpack/hot/only-dev-server',
+        'webpack-dev-server/client?http://localhost:3000',
+        'webpack/hot/dev-server',
         './src/index.js'
     ],
     output: {
-        path: './bld',
-        //publicPath: 'assets',
+        path: path.join(__dirname, 'bld'),
+        publicPath: '',
         filename: 'bundle.js'
     },
     module: {
@@ -37,9 +37,9 @@ module.exports = {
     resolve: {
         extensions: ['', '.js', '.jsx']
     },
-    devServer: {
-        hot: true,
-        inline: true,
-        //contentBase: 'bld'
-    }
+    // devServer: {
+    //     hot: true,
+    //     inline: true,
+    //     //contentBase: 'bld'
+    // }
 }
