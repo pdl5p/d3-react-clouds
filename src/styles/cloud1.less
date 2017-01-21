@@ -1,0 +1,28 @@
+.cloud1-container{
+    position: relative;
+    width: 100%;
+
+    .cloud{
+        position: absolute;
+    }
+
+    .slow{
+        animation: move 10s linear infinite forwards;
+    }
+
+    .medium{
+        animation: move 4s linear infinite forwards;
+    }
+
+    .fast{
+        animation: move 2s linear infinite forwards;
+    }
+
+    .flipped-horizontal{
+        transform: scaleX(-1);
+    }
+
+    .upside-down{
+        transform: scaleY(-1);
+    }
+}
